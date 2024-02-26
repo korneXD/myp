@@ -1,0 +1,76 @@
+<style>
+    header{
+        position: relative;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+    }
+    header .content h1{
+        color: #fff;
+    }
+    header .content h1 span {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        cursor: pointer;
+    }
+    header .content h1 span:hover{
+        -webkit-text-fill-color: #3F00FF;
+    }
+    header .content p{
+        padding-top: 1rem;
+    }
+    .content .blur{
+        position: absolute;
+        box-shadow: 0 0 1000px 50px #3F00FF;
+        z-index: -100;
+    }
+    .image .blur-img{
+        position: absolute;
+        box-shadow: 0 0 1000px 50px #3F00FF;
+        z-index: -100;
+        position: absolute;
+        bottom: 5%;
+        right: 50%;
+    }
+    img{
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: 1px solid #fff;
+        transition: 1s ease;
+        cursor: pointer;
+    }
+    img:hover{
+        border: 5px solid #3F00FF;
+        transition: 1s ease;
+    }
+    @media (max-width: 768px){
+        header{
+            grid-template-columns: auto;
+            margin-top: 70px;
+            z-index: -100;
+        }
+        img{
+            margin: auto;
+            display: flex;
+        }
+    }
+</style>
+<header class="container">
+    <div class="content animate__animated animate__fadeInLeftBig">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h4>Student of 12/A</h4>
+        <h1>Halmosi <span>Kornél</span></h1>
+        <p>18 yo. student at Kando Kalman Kecskemét.</p>
+    </div>
+    <div class="image animate__animated animate__zoomIn">
+        <span class="blur-img"></span>
+        <img src="./imgs/unnamed.jpg" alt="Én">
+    </div>
+</header>
