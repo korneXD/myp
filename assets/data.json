@@ -5,7 +5,7 @@
       "repo_url": "https://github.com/korneXD/bmicheck",
       "webpage_url": "https://kornexd.github.io/bmicheck/",
       "language": "HTML, CSS, JS",
-      "created": "2024-02-27"
+      "created": "2024-01-12"
     },
     "1" : {
       "name": "NAPLO",
@@ -28,7 +28,31 @@
       "image_url": "",
       "repo_url": "https://github.com/korneXD/rock_paper_scissors",
       "webpage_url": "https://kornexd.github.io/rock_paper_scissors/",
-      "language": "HTML, CSS",
-      "created": "2024-01-17"
+      "language": "HTML, CSS, JS",
+      "created": "2024-01-12"
+    },
+    "4" : {
+      "name": "HOL A PIROS",
+      "image_url": "",
+      "repo_url": "https://github.com/korneXD/piros",
+      "webpage_url": "https://kornexd.github.io/piros/",
+      "language": "HTML, CSS, JS",
+      "created": "2023-12-15"
+    },
+    "5" : {
+      "name": "HYPEBEAST RAKTAR",
+      "image_url": "",
+      "repo_url": "https://github.com/korneXD/hypebeastraktar",
+      "webpage_url": "https://kornexd.github.io/hypebeastraktar/",
+      "language": "HTML, CSS, JS",
+      "created": "2023-12-16"
+    },
+    "6" : {
+      "name": "MY PORTFOLIO",
+      "image_url": "",
+      "repo_url": "https://github.com/korneXD/myp",
+      "webpage_url": "https://kornexd.github.io/myp/",
+      "language": "HTML, CSS, JS",
+      "created": "2024-02-27"
     }
 }

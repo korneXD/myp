@@ -1,3 +1,100 @@
-<div>
-    <h1>contact</h1>
+<style>
+    .contact-content{
+        position: relative;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+    .contacts{
+        position: relative;
+        background-color: #000000;
+        border-radius: 15px;
+        border: 2px solid #3f00FF;
+        align-items: center;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 2rem;
+        transition: 0.3s;
+    }
+    .contacts p{
+        color: #fff;
+        line-height: 30px;
+    }
+    .contacts p span{
+        -webkit-text-fill-color: #fff;
+        -webkit-text-stroke: 1px #3f00FF;
+        transition: 0.3s;
+    }
+    .contacts p span:hover{
+        -webkit-text-fill-color: #3f00FF;
+        font-size: larger;
+        transition: 0.3s;
+    }
+    .contacts:hover{
+        scale: 1.1;
+        transition: 0.3s;
+    }
+    .contact-content h1 span{
+        -webkit-text-fill-color: #fff;
+        -webkit-text-stroke: 1px #3f00FF;
+        transition: 0.3s;
+    }
+    .contact-content h1 span:hover{
+        font-size: larger;
+        -webkit-text-fill-color: #3f00FF;
+        transition: 0.3s;
+    }
+    .blur{
+        position: absolute;
+        box-shadow: 0 0 1000px 50px #3F00FF;
+        z-index: -100;
+    }
+    .blur-contacts{
+        position: absolute;
+        box-shadow: 0 0 1000px 50px #3F00FF;
+        z-index: -100;
+        bottom: 10%;
+        right: 5%;
+    }
+    @media (max-width: 768px){
+        .contact-content{
+            overflow-x: hidden;
+            grid-template-columns: auto;
+            margin-top: 70px;
+        }
+        .contacts{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .email{
+            line-break:anywhere;
+        }
+        .blur{
+            display: none;
+        }
+    }
+</style>
+<div class="contact-content">
+    <div class="animate__animated animate__fadeInLeftBig">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h1><span>My</span> contacts</h1>
+    </div>
+    <div class="animate__animated animate__backInRight">
+        <div class="contacts">
+            <p><span>Name:</span> Halmosi Kornél</p>
+            <p class="email"><span>Email:</span> kornelhalmosi420@gmail.com</p>
+            <p><span>Mobile:</span> +36-70-xxx-xxxx</p>
+            <p><span>Github:</span> korneXD</p>
+            <p><span>Netlify:</span> korneXD</p>
+        </div>
+        <span class="blur-contacts"></span>
+    </div>
 </div>

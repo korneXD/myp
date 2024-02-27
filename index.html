@@ -42,7 +42,7 @@
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid #3F00FF;
         transition: 0.3s;
        }
        nav:hover{
@@ -58,21 +58,35 @@
        .link a{
         position: relative;
         padding-bottom: 0.75rem;
-        color: #5D3FD3;
+        color: #3F00FF;
         text-decoration: none;
         font-size: 22px;
-        transition: 1s ease;
+        transition: 0.3s;
+        -webkit-text-fill-color: #fff;
+        -webkit-text-stroke: 1px #3F00FF;
+       }
+       .link a span{
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #3F00FF;
+        transition: 0.3s;
        }
        .link a:hover{
-            color: #3F00FF;
+            -webkit-text-fill-color: #3F00FF;
             font-size: 26px;
-            transition: 0.3s ease;
+            transition: 0.3s;
+       }
+       .link a span:hover{
+            -webkit-text-fill-color: #fff;
+            font-size: 30px;
+            transition: 0.3s;
        }
        .logo{
         font-size: 26px;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px #3F00FF;
         cursor: pointer;
+        position: relative;
+        padding-bottom: 0.75rem;
+        text-decoration: none;
+        transition: 0.3s;
        }
        .logo:hover{
         -webkit-text-fill-color: #3F00FF;
@@ -90,15 +104,18 @@
         flex-direction: row;
         justify-content: center;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-top: 1px solid gray;
+        border-top: 1px solid #3F00FF;
         transition: 0.3s;
        }
        footer p{
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 1px #fff;
+        transition: 0.3s;
        }
        footer p:hover{
         -webkit-text-fill-color: #fff;
+        font-size: larger;
+        transition: 0.3s;
        }
        footer:hover{
         scale: 1.1;
@@ -142,6 +159,7 @@
                 position: absolute;
                 border: 0;
                 border-radius: 2px;
+                z-index: 100;
             }
             .nav-links{
                 position: fixed;
@@ -189,7 +207,7 @@
         </button>
         <ul class="nav-links" id="navbar">
             <li class="link"><a href="#/projects">Projects</a></li>
-            <li class="link logo"><a href="#/">Portfolio</a></li>
+            <li class="link logo"><a href="#/"><span>Portfolio</span></a></li>
             <li class="link"><a href="#/contact">Contact</a></li>
         </ul>
     </nav>
