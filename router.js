@@ -1,12 +1,15 @@
-import { contact } from './contact.js';
 import { home } from './home.js';
+import { projects } from './projects.js';
 
 const routes = {
 	'': 'home.html',
-    contact: 'contact.html',
+	projects: 'projects.html',
+	contact: 'contact.html',
+	'404': '404.html'
 };
 
 window.addEventListener('hashchange', () => {
+	//console.log(window.location.hash);
 	navigate();
 });
 navigate();
@@ -22,6 +25,6 @@ async function loadPage(url, domObj) {
 	const response = await fetch(url);
 	const html = await response.text();
 	domObj.innerHTML = html;
-	if (url == 'contact.html') contact();
-	else if (url == 'home.html') home();
+	if (url == 'home.html') home();
+	else if (url == 'projects.html') projects();
 }

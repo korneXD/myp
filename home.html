@@ -21,6 +21,21 @@
     header .content p{
         padding-top: 1rem;
     }
+    header .content p a{
+        text-decoration: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #3F00FF;
+        background-color: #000000;
+        padding: 5px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    header .content p a:hover{
+        -webkit-text-fill-color: #3F00FF;
+        font-size: 20px;
+        transition: 0.3s;
+    }
     .content .blur{
         position: absolute;
         box-shadow: 0 0 1000px 50px #3F00FF;
@@ -44,7 +59,8 @@
     }
     img:hover{
         border: 5px solid #3F00FF;
-        transition: 1s ease;
+        transition: 0.3s ease;
+        scale: 1.1;
     }
     @media (max-width: 768px){
         header{
@@ -67,7 +83,7 @@
         <span class="blur"></span>
         <h4>Student of 12/A</h4>
         <h1>Halmosi <span>Kornél</span></h1>
-        <p>18 yo. student at Kando Kalman Kecskemét.</p>
+        <p>18 yo. student at <a href="https://www.google.com/maps/@46.9176054,19.6879921,3a,85.6y,309.4h,83.29t/data=!3m7!1e1!3m5!1st-3xInmi7Ya6y8xGmMOqXA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Dt-3xInmi7Ya6y8xGmMOqXA%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D302.96393%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu" target="_blank">Kando Kalman</a> Kecskemét.</p>
     </div>
     <div class="image animate__animated animate__zoomIn">
         <span class="blur-img"></span>
