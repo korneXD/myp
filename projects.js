@@ -3,7 +3,7 @@ import { getData } from './utils.js';
 export const projects = ()=>{
     document.querySelector('.github-projects').innerHTML = "";
     getData('./assets/data.json', (e) => {
-        for (let i = 0; i < 6; i++){
+        for (let i = 0; i < 7; i++){
             const element = e[i];
             console.log(element);
             document.querySelector('.github-projects').innerHTML += `
